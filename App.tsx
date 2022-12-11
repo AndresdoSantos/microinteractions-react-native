@@ -1,11 +1,11 @@
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
-import { Pinch } from './src/components/Pinch'
+import { Pan } from './src/components/Pan'
 
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Pinch />
+      <Pan />
     </GestureHandlerRootView>
   )
 }
