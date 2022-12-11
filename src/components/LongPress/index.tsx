@@ -1,5 +1,9 @@
 import { View } from 'react-native'
-import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated'
+import Animated, {
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated'
 import { Gesture, GestureDetector } from 'react-native-gesture-handler'
 
 import { styles } from './styles'
@@ -9,12 +13,10 @@ export function LongPress() {
 
   const animatedStyle = useAnimatedStyle(() => ({
     width: size.value,
-    height: size.value
+    height: size.value,
   }))
 
-  const onLongPressGesture = 
-    Gesture
-    .LongPress()
+  const onLongPressGesture = Gesture.LongPress()
     .onTouchesDown(() => {
       size.value = withTiming(size.value + 200, { duration: 500 })
     })

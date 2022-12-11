@@ -5,12 +5,12 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#2C2C2C'
+    backgroundColor: '#2C2C2C',
   },
   box: {
     height: 100,
     width: 100,
     borderRadius: 24,
-    backgroundColor: '#8527E5'
-  }
+    backgroundColor: '#8527E5',
+  },
 })
