@@ -1,11 +1,11 @@
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
-import { Touches } from './src/components/Touches'
+import { LongPress } from './src/components/LongPress'
 
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Touches />
+      <LongPress />
     </GestureHandlerRootView>
   )
 }
